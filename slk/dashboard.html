@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>السكربتات</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    header .user-info {
+      font-size: 16px;
+    }
+    .script-box {
+      background: white;
+      margin: 20px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 800px;
+    }
+    .script-box img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .script-description {
+      padding: 20px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px 20px 20px;
+    }
+    .button-container button {
+      background: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .button-container button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>اختر السكربت الذي تريده</h1>
+    <div class="user-info">مرحباً، المستخدم</div>
+  </header>
+
+  <div class="script-box">
+    <img src="p.2.webp" alt="Script 1">
+    <div class="script-description">BLOCK SPIN</div> 
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=1')">تابع للحصول</button>
+      <button onclick="showDetails(1)">تفاصيل</button>
+    </div>
+  </div>
+
+  <div class="script-box">
+    <img src="https://via.placeholder.com/800x400" alt="Script 2">
+    <div class="script-description">معلومات عن السكربت الثاني: أداة مفيدة لتتبع الأداء.</div>
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=2')">تابع للحصول</button>
+      <button onclick="showDetails(2)">تفاصيل</button>
+    </div>
+  </div>
+
+  <div class="script-box">
+    <img src="https://via.placeholder.com/800x400" alt="Script 3">
+    <div class="script-description">معلومات عن السكربت الثالث: سكربت بسيط وسريع للتشغيل الآلي.</div>
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=3')">تابع للحصول</button>
+      <button onclick="showDetails(3)">تفاصيل</button>
+    </div>
+  </div>
+
+  <div class="script-box">
+    <img src="https://via.placeholder.com/800x400" alt="Script 4">
+    <div class="script-description">معلومات عن السكربت الرابع: مثالي لإدارة الوقت والمهام.</div>
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=4')">تابع للحصول</button>
+      <button onclick="showDetails(4)">تفاصيل</button>
+    </div>
+  </div>
+
+  <div class="script-box">
+    <img src="https://via.placeholder.com/800x400" alt="Script 5">
+    <div class="script-description">معلومات عن السكربت الخامس: أدوات تحليل متقدمة.</div>
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=5')">تابع للحصول</button>
+      <button onclick="showDetails(5)">تفاصيل</button>
+    </div>
+  </div>
+
+  <div class="script-box">
+    <img src="https://via.placeholder.com/800x400" alt="Script 6">
+    <div class="script-description">معلومات عن السكربت السادس: يساعد على تحسين الإنتاجية.</div>
+    <div class="button-container">
+      <button onclick="goToAd('control.html?script=6')">تابع للحصول</button>
+      <button onclick="showDetails(6)">تفاصيل</button>
+    </div>
+  </div>
+
+  <script>
+    function goToAd(target) {
+      window.location.href = `ad.html?redirect=${encodeURIComponent(target)}`;
+    }
+
+    function showDetails(id) {
+      alert("تفاصيل السكربت " + id + " سيتم عرضها هنا لاحقاً.");
+    }
+  </script>
+</body>
+</html>
+
